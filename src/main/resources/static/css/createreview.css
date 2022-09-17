@@ -1,0 +1,27 @@
+.review-card {
+    margin-top: 180px;
+    margin-left: 220px;
+    width: 70vw;
+    height: 70vh;
+    background-color: #444444;
+    border-radius: 20px;
+    box-shadow: rgba(217,217,217, 0.4) 0px 30px 90px;}
+
+.card-body,.card-text, .card-title, .card-header, .card-footer{
+    color: aliceblue;
+}
+
+.review-text{
+    height: 280px;
+    width: 500px;
+    background-color: #444444;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    color: aliceblue;
+
+}
+
+.checked{
+    color: goldenrod;
+}

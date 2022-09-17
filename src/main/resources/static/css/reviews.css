@@ -1,0 +1,40 @@
+.add {
+    margin-top: 80px;
+}
+
+.card {
+    margin-top: 50px;
+    margin-left: 150px;
+    background-color: black;
+    box-shadow: rgb(211, 211, 211) 0px 20px 30px -10px;
+    width: 80vw;
+    padding-left: 15px;
+    height: 150px;
+}
+
+.card-text, .card-title, .card-footer {
+    color: aliceblue;
+    font-size: small;
+}
+
+.checked {
+    color: orange;
+}
+
+.btn-dark {
+    background-color: #e1b131;
+    color: black;
+}
+
+.edit {
+    height: 30px;
+    width: 110px;
+    padding: 2px;
+}
+
+.card-footer {
+    margin-top: 1px;
+    margin-left: 5px;
+    height: 32px;
+    padding: 5px;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Caveat&family=Dancing+Script&family=DynaPuff&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Rubik+Burned&family=Rubik+Distressed&family=Rubik+Maze&family=Shadows+Into+Light&family=Silkscreen&display=swap');
+
+/*font-family: 'Aboreto', cursive;*/
+/*font-family: 'Amatic SC', cursive;*/
+/*font-family: 'Caveat', cursive;*/
+/*font-family: 'Dancing Script', cursive;*/
+/*font-family: 'DynaPuff', cursive;*/
+/*font-family: 'Indie Flower', cursive;*/
+/*font-family: 'Pacifico', cursive;*/
+/*font-family: 'Permanent Marker', cursive;*/
+/*font-family: 'Rubik Burned', cursive;*/
+/*font-family: 'Rubik Distressed', cursive;*/
+/*font-family: 'Rubik Maze', cursive;*/
+/*font-family: 'Shadows Into Light', cursive;*/
+/*font-family: 'Silkscreen', cursive;*/
+/**/
+
+body {
+    background-color: black;
+}
+
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav {
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar-brand {
+    text-align: center;
+    color: aliceblue;
+    display: inline-flex;
+    font-size: xx-large;
+    font-family: 'Indie Flower', cursive;
+    transition: 1s;
+    margin-left: 70px;
+}
+
+.navbar-toggler {
+    color: darkgray;
+    background-color: darkgray;
+}
+
+.nav-link {
+    color: lightgray;
+    display: inline-flex;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.right {
+    margin-left: 70px;
+}
+
+.nav-link:visited {
+    color: darkgray;
+}
+
+.nav-link:hover {
+    color: aliceblue;
+}
+
+.navbar-brand:hover {
+    color: darkgoldenrod;
+    transform: scale(1.2);
+}

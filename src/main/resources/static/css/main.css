@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Caveat&family=Dancing+Script&family=DynaPuff&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Rubik+Burned&family=Rubik+Distressed&family=Rubik+Maze&family=Shadows+Into+Light&family=Silkscreen&display=swap');
+
+/*font-family: 'Aboreto', cursive;*/
+/*font-family: 'Amatic SC', cursive;*/
+/*font-family: 'Caveat', cursive;*/
+/*font-family: 'Dancing Script', cursive;*/
+/*font-family: 'DynaPuff', cursive;*/
+/*font-family: 'Indie Flower', cursive;*/
+/*font-family: 'Pacifico', cursive;*/
+/*font-family: 'Permanent Marker', cursive;*/
+/*font-family: 'Rubik Burned', cursive;*/
+/*font-family: 'Rubik Distressed', cursive;*/
+/*font-family: 'Rubik Maze', cursive;*/
+/*font-family: 'Shadows Into Light', cursive;*/
+/*font-family: 'Silkscreen', cursive;*/
+/**/
+
+
+.header{
+    margin-top: 70px;
+    height: 300px;
+    width: 100%;
+    display: compact;
+    object-fit: contain;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 100%/0 0 30px 30px;
+}
+.card-body{
+    padding: 0px;
+    text-align: center;
+}
+.card{
+    display: inline-flex;
+    margin: 5px;
+    height: 290px;
+    width: 173px !important;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: black;
+}
+.card-img-top{
+    height: 180px;
+    width: 170px;
+    text-align: center;
+    margin: 0px;
+}
+.btn{
+    text-align: center;
+    margin-top: 2px;
+    height: 30px;
+    width: 90px;
+    font-size: small;
+    padding: 4px;
+
+}
+.card-title{
+    margin-top: 3px;
+    font-family: 'Aboreto', cursive;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 0px;
+    text-wrap: inherit;
+    color: lightgray;
+}
+.card-text{
+    font-family: 'Aboreto', cursive;
+    font-size: smaller;
+    text-align: center;
+    margin: 0px;
+    color: lightgray;
+}
