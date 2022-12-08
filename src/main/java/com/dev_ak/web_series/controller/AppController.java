@@ -5,11 +5,12 @@ import com.dev_ak.web_series.entity.WebSeries;
 import com.dev_ak.web_series.service.ReviewService;
 import com.dev_ak.web_series.service.WebSeriesService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -44,7 +45,9 @@ public class AppController {
         Optional<WebSeries> series = this.webSeriesService.getById(id);
         if (series.isPresent()) {
             WebSeries webSeries = series.get();
+            Review review = new Review();
             List<Review> reviews = this.reviewService.getAllById(id);
+            model.addAttribute("review", review);
             model.addAttribute("webSeries", webSeries);
             model.addAttribute("reviews", reviews);
         }
@@ -71,6 +74,43 @@ public class AppController {
             WebSeries webSeries = series.get();
             this.reviewService.createReview(review1, id);
             model.addAttribute("webSeries", webSeries);
+        }
+        return "redirect:/reviews/{id}";
+    }
+
+    @GetMapping("/reviews/{id}/edit_review/{review_id}")
+    public String editReview(@PathVariable Long id, @PathVariable Long review_id, Model model) {
+        Optional<WebSeries> series = this.webSeriesService.getById(id);
+        if (series.isPresent()) {
+            WebSeries webSeries = series.get();
+            Optional<Review> rv = this.reviewService.getById(review_id);
+            if (rv.isPresent()) {
+                Review review = rv.get();
+                List<Review> reviews = webSeries.getReviews();
+                model.addAttribute("reviews", reviews);
+                model.addAttribute("review", review);
+                model.addAttribute("webSeries", webSeries);
+            }
+        }
+        return "reviews";
+    }
+
+    @RequestMapping(value = "/reviews/{id}/edit_review/{review_id}", method = RequestMethod.POST,
+            consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_FORM_URLENCODED_VALUE})
+    public String editReview(@PathVariable Long id, @PathVariable Long review_id, Model model, @RequestBody Review review1) {
+        Optional<WebSeries> series = this.webSeriesService.getById(id);
+        if (series.isPresent()) {
+            WebSeries webSeries = series.get();
+            Optional<Review> rv = this.reviewService.getById(review_id);
+            if (rv.isPresent()) {
+                Review review = rv.get();
+                review.setId(review_id);
+                review.setReviewText(review1.getReviewText());
+                review.setDate(LocalDate.now());
+                this.reviewService.updateReview(review);
+                model.addAttribute("webSeries", webSeries);
+                model.addAttribute("review", review);
+            }
         }
         return "redirect:/reviews/{id}";
     }

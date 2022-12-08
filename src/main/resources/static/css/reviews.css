@@ -9,7 +9,8 @@
     box-shadow: rgb(211, 211, 211) 0px 20px 30px -10px;
     width: 80vw;
     padding-left: 15px;
-    height: 150px;
+    min-height: 150px;
+    opacity: .8;
 }
 
 .card-text, .card-title, .card-footer {
@@ -30,6 +31,7 @@
     height: 30px;
     width: 110px;
     padding: 2px;
+    margin-left: 30px;
 }
 
 .card-footer {
@@ -37,4 +39,29 @@
     margin-left: 5px;
     height: 32px;
     padding: 5px;
+}
+
+.input-text {
+    width: 500px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.modal-card {
+    background-color: black;
+    box-shadow: rgb(211, 211, 211) 0px 20px 30px -10px;
+    width: 80vw;
+    padding-left: 15px;
+    min-height: 150px;
+    opacity: 1 !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+}
+
+.modal-buttons {
+    height: 30px;
+    width: 110px;
+    padding: 2px;
+    margin-left: 30px;
 }
