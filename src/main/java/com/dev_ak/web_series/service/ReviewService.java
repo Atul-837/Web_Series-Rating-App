@@ -23,7 +23,7 @@ public class ReviewService {
         if (series.isPresent()) {
             WebSeries webSeries = series.get();
             Random rand = new Random();
-            review.setId(rand.nextLong(Long.MAX_VALUE));
+//            review.setId(rand.nextLong(Long.MAX_VALUE));
             review.setWebSeries(webSeries);
             review1 = this.reviewRepo.save(review);
             this.webSeriesService.updateWebSeries(webSeries);
